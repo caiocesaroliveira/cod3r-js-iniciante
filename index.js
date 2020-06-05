@@ -1,13 +1,32 @@
 
+function soma(a, b) {
+    console.log(a+b);
+}
 
-//#region estrutura de controle
+function subtrair(a, b) {
+    return (b-a);
+}
 
-//#endregion
+let x = subtrair(2,3)
+console.log(x)
 
-//#region funcao
+function executar(fn) {
+    if(typeof fn === 'function'){
+        fn(3,2)
+    }
+}
 
-//#endregion
+executar(soma)
 
-//#region objeto
+//function declaration
 
-//#endregion
+//function expression
+const mult = function (a,b) {
+    return a * b
+}
+console.log(mult)
+
+const z = ()=> {
+    return 'z'
+}
+console.log(z)
